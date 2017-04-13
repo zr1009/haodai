@@ -1,0 +1,424 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="idangerous.swiper.css">
+<script src="idangerous.swiper.js"></script>
+<style>
+*{margin:0;padding:0;}
+body{margin:0;padding:0;font-size:12px;color:#cccccc;font-family:"微软雅黑";}
+ol,ul,li,p,img{display:block;margin:0;padding:0;}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+
+.top{
+	width:100%;
+	height:45px;
+	margin:0 auto;
+	background:#000;
+}
+.top1{
+	width:960px;
+	height:45px;
+	margin:0 auto;
+	line-height:45px;
+}
+.orange a{
+	color:#ffffff;
+}
+.orange a:hover{
+	color:#ff9900;
+}
+.orange a.now{
+	color:#ff9900;
+}
+.logo{
+	width:100%;
+	height:83px;
+	margin:0 auto;
+	color:#333333;
+	background:#fdfdfd;
+	border:ipx solid #d0d0d0;
+}
+.logo1{
+	width:960px;
+	height:83px;
+	margin:0 auto;
+}
+.nav{
+	width:705px;
+	height:45px;
+	margin-top:20px;
+	float:right;
+}
+.nav a{
+	width:88px;
+	height:45px;
+	line-height:45px;
+	color:#333;
+	text-align:center;
+	float:left;
+	display:block;
+}
+.nav a:hover{
+	color:#000;
+	font-weight:bold;
+	background:url(img/a03.jpg);
+}
+.nav a.now1{
+	color:#000;
+	font-weight:bold;
+	background:url(img/a03.jpg);
+}
+<!--banner-->
+.bannerk{width:100%px;height:471px;margin:0 auto;}
+.bannerk img{width:100%;height:471px;}
+.banner-fu{width:325px;height:402px; background-color:rgba(0,0,0,0.5);position:absolute;left:194px;top:165px; z-index:999;}
+.banner-fu-a{width:287px;height:69px;float:left;margin:7px 0px 0px 20px;color:#fff;font-size:24px;line-height:69px;}
+.banner-fu-span{width:287px;height:25px;float:left;color:#fff;margin-left:20px;line-height:25px;}
+.kan1{width:287px;height:43px;float:left;margin-left:20px;}
+.banner-fu>p{width:287px;height:20px;float:left;margin-left:20px;margin-top:20px;color:#fff;}
+
+.ban-xia{width:960px;height:122px;margin:0 auto;margin-top:24px;margin-bottom:24px;}
+.pagination{ position:absolute; z-index:20; left:10px; bottom:10px;}
+
+
+.zhong{width:962px;height:398px;margin:0 auto;margin-top:20px;margin-bottom:45px;}
+.zhong-left{width:602px;height:396px;float:left;border:1px solid #e9e9e9;}
+.zhong-left-yi{width:223px;height:169px;float:left;margin:27px 0px 0px 62px;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;}
+.zhong-left-yi span{width:170px;height:20px;float:left;margin-bottom:12px;font-size:15px;}
+.zhong-left-yi p{width:170px;height:44px;float:left;margin-bottom:17px;line-height:20px;color:#999;font-size:13px;}
+.zhong-left-er{width:223px;height:169px;float:left;margin:27px 0px 0px 0px;border-bottom:1px solid #e9e9e9;}
+.zhong-left-er span{width:170px;height:20px;float:right;margin-bottom:12px;font-size:15px;}
+.zhong-left-er p{width:170px;height:44px;float:right;margin-bottom:17px;line-height:20px;color:#999;font-size:13px;}
+.zhong-left-san{width:223px;height:169px;float:left;margin:0px 0px 0px 62px;border-right:1px solid #e9e9e9;}
+.zhong-left-san span{width:170px;height:20px;float:left;margin-bottom:12px;font-size:15px;}
+.zhong-left-san p{width:170px;height:44px;float:left;margin-bottom:17px;line-height:20px;color:#999;font-size:13px;}
+.zhong-left-si{width:223px;height:169px;float:left;border-bottom:1px solid #e9e9e9;}
+.zhong-left-si span{width:170px;height:20px;float:right;margin-bottom:12px;font-size:15px;}
+.zhong-left-si p{width:170px;height:44px;float:right;margin-bottom:17px;line-height:20px;color:#999;font-size:13px;}
+
+
+.zhong-right{width:347px;height:396px;float:right;}
+.zhong-right-yi{width:347px;height:190px;float:left;}
+.zhong-right-yi span{width:327px;height:60px;float:left;font-size:17px;margin-left:20px;}
+.zhong-right-yi p{width:327px;height:105px;float:left;font-size:14px;margin-left:20px;color:#666;}
+
+.hzjg{
+	width:100%;
+	margin-top:28px;	
+}
+.hzjg1{
+	width:960px;
+	height:150px;
+	border:1px solid #e9e9e9;
+	margin-top:28px;
+	margin:0 auto;	
+}
+.hz{
+	height:40px;
+	border-bottom:1px solid #e9e9e9;
+	color:#000;
+	font-size:14px;
+	font-weight:bold;
+	padding-left:14px;
+	line-height:40px;
+	background:#f8f8f8;	
+}
+.hzjg1 ul li{
+	width:114px;
+	float:left;
+	color:#323232;
+	line-height:45px;
+	margin-right:26px;
+}
+.lie{
+	height:46px;
+}
+.lie span{
+	float:left;
+}
+.lie span a{
+	color:#323232;
+}
+.lie img{
+	float:left;
+}
+.lie1{
+	height:54px;
+}
+.lie1 span{
+	float:left;
+}
+.lie1 span a{
+	color:#323232;
+}
+.lie1 img{
+	float:left;
+}
+.rmcs{
+	width:100%;
+	margin-top:22px;	
+}
+.rmcs1{
+	width:960px;
+	height:135px;
+	border:1px solid #e9e9e9;
+	margin-top:22px;
+	margin:0 auto;	
+}
+.cs{
+	color:#999;
+	line-height:25px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.cs a{
+	color:#999;
+}
+.bjrm{
+	width:100%;
+	margin-top:22px;	
+}
+.bjrm1{
+	width:960px;
+	height:110px;
+	margin-top:22px;
+	margin:0 auto;
+	border:1px solid #e9e9e9;
+}
+.tj{
+	color:#999;
+	line-height:25px;
+	margin-top:10px;
+	margin-bottom:10px;	
+}
+.tj a{
+	color:#999;
+}
+
+.jeiwei{width:100%;height:270px;margin:auto;border-top:1px solid #d0d0d0;margin-top:38px;background:#f5f5f5;}
+.jeiwei-yi{width:960px;height:28px;margin:auto;border-bottom:1px solid #d9d9d9;}
+.jeiwei-yi>span{width:153px;height:28px;float:left;line-height:28px;}
+.jeiwei-yi>p{width:153px;height:28px;float:right;line-height:28px;color:#cecccc;}
+.jeiwei-er{width:960px;height:63px;margin:auto;border-bottom:1px solid #d9d9d9;}
+.jeiwei-er>div>a{float:left;margin:0px 12px 0px 0px;color:#ccccce;}
+.jeiwei-er>div{width:960px;height:20px;float:left;margin-top:10px;}
+
+.jeiwei-san{width:933px;height:31px;margin:auto;line-height:31px;color:#999;}
+.jeiwei-san2{width:522px;height:20px;margin:auto;margin-top:20px;}
+.jeiwei-san2>a{float:left;margin-right:10px;color:#666;text-align:center;}
+.jeiwei-san3{width:693px;height:20px;margin:auto;margin-top:3px;color:#999;}
+</style>
+</head>
+
+<body>
+<div class="top">
+	<div class="top1">
+    	<span style="float:left;">　好贷网，好贷款！ </span>
+        <span style="float:left;"><img src="img/a01.jpg" /></span>
+        <span class="orange" style="float:right;color:#ffffff;">客服热线：<b style="color:#ffffff;">400-8055-855</b>（接听时间：工作日9：30-16：30）　　<a href="#">信贷经理登录</a> | <a href="#" class="now">信贷经理免费注册</a> | <a href="#">普通用户登录</a>　</span>
+    </div>
+</div>
+<div class="logo">
+	<div class="logo1">
+		<img src="img/a02.jpg" style="float:left;"/>
+        <div style="width:63px;height:43px;float:left;margin-top:25px;margin-left:20px;">
+        	<select style="width:60px;height:20px;color:#0079c1;background:#f8f8f8;border:1px solid #f3f3f3;"><option>北京</option><option>上海</option><option>天津</option><option >山西</option><option>陕西</option><option>湖南</option><option>湖北</option></select>
+			<p style="margin-top:3px;">[切换城市]</p>
+        </div>
+        <div class="nav"><a href="首页.html">好贷首页</a><a href="消费贷款.html" class="now1">消费贷款</a><a href="企业贷款.html">企业贷款</a><a href="购车贷款.html">购车贷款</a><a href="购房贷款.html">购房贷款</a><a href="抵押贷款.html">抵押贷款</a><a href="好贷咨询.html">好贷攻略</a><a href="贷款问答.html">贷款问答</a></div>
+	</div>
+</div>
+<!--banner-->
+<div class="banner-fu">
+    <div class="banner-fu-a">快速搜索贷款</div>
+    <span class="banner-fu-span">贷款用途：</span>
+     <select name="guojia" class="kan1" style="border:#eee 1px solid;">
+       <option selected>不限</option>
+       <option>211</option>
+       <option>133</option>
+       <option>412</option>
+     </select>
+    <span class="banner-fu-span">贷款用途：</span>
+     <select name="guojia" class="kan1" style="border:#eee 1px solid;">
+       <option selected>不限</option>
+       <option>211</option>
+       <option>133</option>
+       <option>412</option>
+     </select>
+    <span class="banner-fu-span">贷款用途：</span>
+     <select name="guojia" class="kan1" style="border:#eee 1px solid;">
+       <option selected>不限</option>
+       <option>211</option>
+       <option>133</option>
+       <option>412</option>
+     </select>
+     <input type="button" value="搜索一下" style="float:left;margin-left:20px;width:287px;height:43px;color:#fff;line-height:43px;text-align:cenner;background:#0098f1;margin-top:14px;border:0px;font-size:16px;">
+     <p>15479种信贷产品2013家银行3947家小袋公司</p>
+</div>
+
+<div class="bannerk">
+    <div class="swiper-container">
+       <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/banner1.gif" width="1440" height="471">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/bannera.gif" width="1440" height="471">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/bannerb.gif" width="1440" height="471">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/bannerc.gif" width="1440" height="471">
+          </div>
+       </div>
+       <div class="pagination"></div> 
+    </div>
+</div>
+
+<div class="zhong">
+    <div class="zhong-left">
+        <div class="zhong-left-yi">
+            <span>装修贷款</span>
+            <p>买了新房手头紧？没关系，贷款装修，二人世界无需等待...</p>
+            <input type="button" value="立即搜索" style="float:left;width:168px;height:39px;background:#ececec; border:1px solid #c0c0c0;">
+        </div>
+        <div class="zhong-left-er">
+            <span>教育培训贷款</span>
+            <p>培训，进修，职场晋升，什么都不耽误...</p>
+            <input type="button" value="立即搜索" style="float:right;width:168px;height:39px;background:#ececec;border:1px solid #c0c0c0;">
+        </div>
+        <div class="zhong-left-san">
+            <span>家具家电贷款</span>
+            <p>Macbook,液晶电视，各种你想要的，没有不可能...</p>
+            <input type="button" value="立即搜索" style="float:left;width:168px;height:39px;background:#ececec;border:1px solid #c0c0c0;">
+        </div>
+        <div class="zhong-left-si">
+            <span>其他用途贷款</span>
+            <p>只有你想不到的，没有你贷不到的...</p>
+            <input type="button" value="立即搜索" style="float:right;width:168px;height:39px;background:#ececec;border:1px solid #c0c0c0;">
+        </div>
+    </div>
+    <div class="zhong-right">
+        <img src="img/a78.jpg" width="347" height="201" style="float:left;">
+        <div class="zhong-right-yi">
+           <span>宜信普惠信息咨询有限公司北京分公司|宜人贷</span>
+           <p>
+              1额度范围：1.00~50.00万元<br/>
+              期限范围：12~48个月<br/>
+              推荐理由：0抵押0担保，最快1天放贷，额度高达50万，<br/>月费率低至0.78%
+           </p>
+        </div>
+    </div>
+</div>
+
+<div class="hzjg">
+	<div class="hzjg1">
+		<div class="hz">合作伙伴</div>
+        <ul class="lie">
+        	<li><img src="img/a79.jpg" /><span><a href="#">安信普惠</a></span></li>
+            <li><img src="img/a80.jpg" /><span><a href="#">融信嘉业</a></span></li>
+            <li><img src="img/a81.jpg" /><span><a href="#">中凯汇通</a></span></li>
+            <li><img src="img/a82.jpg" /><span><a href="#">融友财富</a></span></li>
+            <li><img src="img/a83.jpg" /><span><a href="#">易通贷</a></span></li>
+            <li><img src="img/a84.jpg" /><span><a href="#">智桐伟业</a></span></li>
+            <li style="margin-right:0;"><img src="img/a85.jpg" /><span><a href="#">众信嘉禾</a></span></li>
+        </ul>
+        <ul class="lie1">
+        	<li><img src="img/a86.jpg" /><span><a href="#">信安中融</a></span></li>
+            <li><img src="img/a87.jpg" /><span><a href="#">百源新</a></span></li>
+            <li><img src="img/a88.jpg" /><span><a href="#">中金行</a></span></li>
+            <li><img src="img/a89.jpg" /><span><a href="#">福隆升</a></span></li>
+            <li><img src="img/a90.jpg" /><span><a href="#">银丰祥</a></span></li>
+            <li><img src="img/a91.jpg" /><span><a href="#">中安信诚</a></span></li>
+            <li style="margin-right:0;"><img src="img/a92.jpg" /><span><a href="#">君诚汇</a></span></li>
+        </ul>
+	</div>
+</div>
+<div class="rmcs">
+	<div class="rmcs1">
+    	<div class="hz">热门城市贷款</div>
+        <div class="cs">
+        	　<a href="#">上海贷款</a>　　　　　　　<a href="#">北京贷款</a>　　　　　　　<a href="#">深圳贷款</a>　　　　　　　<a href="#">厦门贷款</a>　　　　　　　<a href="#">天津贷款</a>　　　　　　　<a href="#">大连贷款</a>　　　　　　　　<a href="#">南京贷款</a>　　　　　　　 　<a href="#">无锡贷款</a>　　　　　　　<a href="#">鄂尔多斯贷款</a>　　　　　<a href="#">哈尔滨贷款</a>　　　　　　<a href="#">宁波贷款</a>　　　　　　　<a href="#">温州贷款</a>　　　　　　　<a href="#">福州贷款</a>　　　　　　　　<a href="#">泉州贷款</a>　　　　　　　 　<a href="#">广州贷款</a>　　　　　　　<a href="#">成都贷款</a>　　　　　　　<a href="#">苏州贷款</a>　　　　　　　<a href="#">杭州贷款</a>　　　　　　　<a href="#">重庆贷款</a>　　　　　　　<a href="#">西安贷款</a>
+        </div>
+    </div>
+</div>
+<div class="bjrm">
+	<div class="bjrm1">
+    	<div class="hz">北京热门贷款推荐</div>
+        <div class="tj">
+        	　<a href="#">北京小额贷款</a>　　　　　　<a href="#">北京汽车贷款</a>　　　　　　<a href="#">零首付贷款</a>　　　　　　<a href="#">二手车贷款</a>　　　　　　<a href="#">北京住房贷款</a>　　　　　　<a href="#">二手房贷款</a>　　　　　　<a href="#">北京消费贷款</a>　　　　 　<a href="#">房屋抵押贷款</a>　　　　　　<a href="#">北京经营贷款</a>　　　　　　<a href="#">北京装修贷款</a>　　　　　<a href="#">北京企业贷款</a>　　　　　<a href="#">住房抵押贷款</a>　　　　　　<a href="#">北京无抵押贷款</a>　　　　<a href="#">无抵押贷款</a>
+        </div>
+    </div>
+</div>
+<!--尾部-->
+<div class="jeiwei">
+   <div class="jeiwei-yi">
+      <span>友情链接</span>
+      <p>友链合作：QQ3036684819</p>
+   </div>
+   <div class="jeiwei-er">
+       <div >
+         <a href="#">理想在线</a>
+         <a href="#">证券之星</a>
+         <a href="#">贷款</a>
+         <a href="#">合力货</a>
+         <a href="#">北京贷款</a>
+         <a href="#">旺财谷</a>
+         <a href="#">翼龙贷网</a>
+         <a href="#">美利金融</a>
+         <a href="#">出国自由行</a>
+         <a href="#">人人操盘</a>
+         <a href="#">北京抵押贷款</a>
+         <a href="#">多返管家</a>
+         <a href="#">海内网</a>
+         <a href="#">北京个人贷款</a>
+         <a href="#">安家世行</a>
+         <a href="#">金评媒</a>
+      </div>
+       <div >
+         <a href="#">西宁列表网</a>
+         <a href="#">银行存款利率</a>                              
+         <a href="#">葵花理财</a>
+         <a href="#">家分期</a>
+         <a href="#">网贷天眼</a>
+         <a href="#">住房抵押贷款</a>
+      </div>
+   </div>
+   <div class="jeiwei-san">
+      好贷网一站式贷款搜索平台，免费为您提供北京各大银行，小货公司，典当行的正规贷款，各类个人贷款，个人信用贷款，个人抵押贷款，企业信用贷款，企业抵押贷款任你选
+   </div>
+   <div class="jeiwei-san2">
+      <a href="#">关于好贷</a>
+      <a href="#">信贷员免费注册</a>
+      <a href="#">贷款计算器</a>
+      <a href="#">网站使用条款与声明</a>
+      <a href="#">网站地图</a>
+      <a href="#">联系我们</a>
+      <a href="#">商务合作</a>
+   </div>
+   <div class="jeiwei-san3">
+   Copyright@2015 haodai.com All&nbsp;Right&nbsp;Reserved.&nbsp;京ICP备11015456号-5京ICP证110311号京公网安备11010102001350号
+   </div>
+   <img src="img/a26.jpg" width="116" height="50" style="margin:auto;margin-top:20px;">
+</div>
+
+
+<script>
+window.onload=function(){
+	var mySwiper=new Swiper(".swiper-container",{
+		loop:true,//是否支持循环播放
+		speed:500,//延迟时间
+		mode:'horizontal',//horizontal：水平，vertical：垂直
+		autoplay:2000,	
+		pagination:'.pagination',//分页器
+	})
+}
+</script>
+</body>
+</html>
+
+

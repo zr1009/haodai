@@ -1,0 +1,84 @@
+/* CSS Document */
+body{margin:0px;padding:0px;font-family:"微软雅黑","黑体";font-size:12px;}
+*{margin:0px;padding:0px}
+ol,ul,li,p,img,h1,h2,h3,h4,h5,h6{display:block;}
+ol,ul,li{list-style:none;}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+
+.box{width:100%;height:44px;background:#000;}
+.box-1{width:960px;height:44px;margin:0 auto;}
+.box-2{width:120px;height:44px;line-height:44px;float:left;color:#ccc;background-image:url(../images/xl.png);background-repeat:no-repeat;background-position:right 15px;}
+.box-3{width:320px;height:44px;margin-left:200px;float:left;line-height:44px;color:#ccc;}
+.box-3 a{color:#fff;text-decoration:none;font-weight:bold;}
+.box-3 a:hover{color:#ff9900;}
+.box-4{width:309px;height:44px;float:right;line-height:44px;text-align:center;color:#729972;}
+.box-4 a{color:#fff;text-decoration:none;}
+.box-4 a:hover{color:#ff9900;}
+.box-4 a.now{color:#ff9900;}
+.box-5{width:960px;height:68px;margin:0 auto;margin-top:15px;}
+.box-6{width:150px;height:53px;float:left;background-image:url(../images/haodai.jpg);background-repeat:no-repeat;}
+select{width:60px;height:26px;line-height:26px;text-align:center;color:#0066cc;}
+.box-7{width:60px;height:26px;float:right;}
+.box-7 li{display:block;line-height:26px;text-align:center;}
+.box-7 li a{display:block;color:#ccc;text-decoration:none;}
+.box-7 li a:hover{color:#F00;}
+.box-8{width:704px;height:53px;float:right;}
+.box-8 li{display:block;width:88px;height:53px;float:left;line-height:53px;text-align:center;}
+.box-8 li a{display:block;text-decoration:none;color:#333;font-size:12px;}
+.box-8 li a:hover{color:#000;font-weight:bold;background-image:url(../images/daohang.jpg);background-repeat:no-repeat;background-position:center bottom;}
+.box-9{width:960px;height:40px;margin:0 auto;line-height:40px;color:#666666;}
+.box-10{margin:0 auto;width:963px;height:199px;}
+.box-11{width:960px;height:910px;margin:0 auto;margin-top:10px;}
+.box-12{width:657px;height:910px;float:left;}
+.nr{width:655px;height:39px;border:1px solid #e9e9e9;background:#f8f8f8;}
+.nr div{float:left;width:150px;height:39px;line-height:39px;text-align:center;color:#333333;font-weight:bold;font-size:14px;}
+.nr div+div{float:right;width:60px;height:39px;color:#333333;font-size:12px;}
+.nr-1{width:655px;height:190px;border-bottom:1px solid #e9e9e9;border-left:1px solid #e9e9e9;border-right:1px solid #e9e9e9;}
+.a1{width:33px;height:33px;margin-top:25px;margin-left:32px;float:left;}
+.a2{float:left;margin-top:25px;margin-left:22px;width:300px;height:80px;}
+.a2 h2{font-size:16px;color:#666666;float:left;}
+.a2 p{color:#666666;}
+.a3{width:260px;height:50px;float:left;margin-top:50px;}
+.a3 .input-1{width:165px;height:28px;float:left;color:#666666;}
+.a3 .input-2{width:74px;height:26px;float:left;background:#eaeaea;text-align:center;margin-left:10px;color:#666666;}
+.a3 span{float:left;margin-top:5px;width:170px;height:25px;color:#666666;}
+.nr-2{width:636px;height:61px;margin-left:11px;border-top:1px dashed #dcdcdc;float:left;}
+.nr-2 .input-3{margin-top:25px;margin-left:220px;background:#0199ec;color:#fff;width:157px;height:32px;}
+.a4{width:657px;height:60px;}
+.img-1{width:36px;height:40px;float:left;margin-top:20px;margin-left:15px;}
+.a5{width:152px;height:40px;float:left;margin-top:20px;margin-left:15px;}
+.a6{width:300px;height:40px;line-height:40px;color:#999;float:left;margin-top:20px;margin-left:15px;}
+.a7 input{width:74px;height:23px;margin-top:25px;margin-left:15px;color:#666;}
+.box-13{width:655px;height:172px;border:1px solid #e9e9e9;float:left;margin-top:20px;}
+.box-14{width:655px;height:40px;border-bottom:1px solid #e9e9e9;background:#f8f8f8;line-height:40px;}
+.box-14 a{color:#999;font-size:14px;padding-left:15px;}
+.box-15{width:655px;height:66px;float:left;}
+.box-15 li{width:125px;height:42px;float:left;margin-top:20px;list-style:none;}
+.box-15 img{width:43px;height:42px;float:left;margin-left:10px;}
+.box-15 a{width:60px;height:42px;line-height:42px;float:left;text-align:center;color:#323232;font-size:14px;margin-left:10px;}
+.box-16{width:655px;height:66px;float:left;}
+.box-16 li{width:125px;height:42px;float:left;margin-top:20px;list-style:none;}
+.box-16 img{width:43px;height:42px;float:left;margin-left:10px;}
+.box-16 a{width:60px;height:42px;line-height:42px;float:left;text-align:center;color:#323232;font-size:14px;margin-left:10px;}
+.box-17{width:281px;height:883px;float:right;}
+.box-18{width:279px;height:216px;border:1px solid #e9e9e9;}
+.box-19{width:279px;height:43px;border-bottom:1px solid #e9e9e9;background:#f8f8f8;line-height:43px;font-size:14px;}
+.box-19 a{color:#333333;margin-left:15px;}
+.box-20{width:279px;height:170px;float:left;}
+.box-20 li{width:279px;height:25px;margin-left:15px;}
+.box-21{width:279px;height:450px;border:1px solid #e9e9e9;margin-top:20px;}
+.box-22{width:279px;height:43px;border-bottom:1px solid #e9e9e9;background:#f8f8f8;line-height:43px;font-size:14px;}
+.box-22 a{color:#333333;margin-left:15px;}
+.box-23{width:279px;height:auto;float:left;}
+.box-23 h1{width:263px;height:60px;margin-left:15px;margin-top:10px;}
+.box-23 li{line-height:30px;list-style:none;margin-left:15px;}
+.box-24{width:279px;height:180px;border:1px solid #e9e9e9;margin-top:15px;}
+.box-25{width:279px;height:43px;border-bottom:1px solid #e9e9e9;background:#f8f8f8;line-height:43px;font-size:14px;}
+.box-25 a{color:#333333;margin-left:15px;}
+.box-26{width:279px;height:160px;float:left;}
+.box-26 li{width:279px;height:25px;margin-left:15px;}
+.box-27{width:100%;height:180px;float:left;background:#f5f5f5;}
+.box-28{width:960px;height:180px;margin:0 auto;text-align:center;line-height:20px;color:#999999;}
+.box-30 a{color:#666666;}
+.box-31 a{color:#999999;}

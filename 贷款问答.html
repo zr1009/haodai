@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+*{ margin:0; padding:0; font-family:微软雅黑;}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+
+/*头部*/
+.head{ width:100%; height:360px;}
+.header{ width:1000px; height:38px;margin:0 auto;}
+.header a{color:#999;}
+.daohang{ width:100%; height:80px; background:#5a9ae1;}
+.banner{ width:1000px; height:240px;  margin:0 auto;}
+.ul-1{ float:left;}
+.ul-1 li{ float:left; display:block; width:75px; height:38px; color:#999999; line-height:38px; font-size:14px;  text-align:center;}
+.ul-2{ float:right;}
+.ul-2 li{ float:left; display:block; width:155px; height:38px; color:#999999; line-height:38px; font-size:14px; text-align:center;}
+.nav{ width:1000px; height:80px;  margin:0 auto;}
+.nav1{ width:142px; height:80px; float:left;}
+.nav2{ width:344px; height:80px; float:left;  margin-left:20px; }
+.nav2 input{ width:258px; height:36px;}
+.nav2l{ float:left; margin-top:16px;}
+.nav2r{ float:left;  margin-top:17px;}
+.nav3{ width:150px; height:80px;  float:left; line-height:80px; text-align:center; margin-left:5px; font-size:20px; }
+.nav3 a{ text-decoration:none; color:#FFF;}
+.nav3 span{ display:block; width:60px; float:left;}
+.nav4{ width:100px; height:80px; font-size:14px; float:right; line-height:80px; text-align:center;}
+.nav4 span{ display:block; width:50px; float:left;}
+.nav4 span a{text-decoration:none; color:#FFF;}
+.banner1{ width:216px; height:168px; float:left; margin-top:40px;}
+.banner2{ width:450px; height:170px;  float:left; margin:40px 0 0 35px;}
+.banner3{ width:256px; height:240px;float:right;}
+.text1{ display:block; width:371px; height:20px;  margin:0 auto; font-size:16px;}
+.text2{ display:block; width:400px; height:40px; margin:5px auto; font-size:14px; color:#999999;}
+.banner2 ul{ float:left; margin:5px 0 0 25px;}
+.banner2 ul li{ list-style:none; font-size:14px; color:#7f7c7f; line-height:24px;}
+.text3{ display:block; width:198px; height:38px;  margin:20px auto; font-family:华文楷体; font-size:26px; color:#5a9ae1; text-align:center;}
+.text4{ display:block; width:168px; height:17px;  margin:10px auto; font-size:14px; color:#9999b2;}
+.text5 input{ display:block; width:210px; height:35px;margin:20px auto; background:#68a1e8; color:#FFF; font-size:14px; line-height:32px; text-align:center; border:none;}
+.text6{ display:block; width:210px; height:15px;  margin:10px auto; text-align:center;color:#9999b2; font-size:14px;}
+/*主体*/
+.main{ width:1000px; height:1325px;  margin:0 auto;}
+.left{ width:700px; height:1070px;  float:left;}
+.submenu{ width:680px; height:98px; border-bottom:1px  solid #e5e5e5; margin:0 auto;}
+.submenu a{color:#999;}
+.su1{ display:block; width:115px; height:40px; float:left; margin:56px 0 0 10px; font-size:18px; text-align:center; line-height:40px;}
+.su2{ display:block; width:115px; height:40px; float:left; margin:56px 0 0 10px;font-size:18px; text-align:center; line-height:40px;}
+.su3{ display:block; width:115px; height:40px; float:left; margin:56px 0 0 10px;font-size:18px; text-align:center; line-height:40px;}
+.su4{ display:block; width:90px; height:40px;  float:right; margin:56px 20px 0 0; color:#b4b4b4; font-size:12px; line-height:40px; text-align:center;}
+.su5{ margin:13px 0 0 15px; float:left;}
+
+
+.pinglun{ width:679px; height:127px; border-bottom:1px dashed #000; margin:0 auto; }
+.pla{ width:45px; height:125px; float:left; display:block; }
+.pla img{ margin-top: 27px;} 
+.plb{ width:580px; height:25px; float:left; display:block; margin:25px 0 0 5px;color:#7fc1f4; font-size: 14px;}
+.pld-0-1{ margin-right: 10px; display: block; width: 80px; height: 16px; float:left; margin-left:5px;}
+.pld-0-2{ margin-right: 10px; display: block; width: 80px; height: 16px; float:left; margin-left:5px;}
+.plc{ width:580px; height:25px; float:left; display:block;  margin:5px 0 0 5px; color: #666666; font-size: 14px;}
+.pld{ width:580px; height:25px; float:left; display:block;  margin:5px 0 0 5px; color: #999999; font-size: 14px;}
+
+.pinglun-1{ width:679px; height:127px; border-bottom:1px dashed #000; float:left}
+.pla-1{ width:45px; height:125px; float:left; display:block; }
+.pla-1 img{ margin-top: 27px;} 
+.plb-1{ width:580px; height:25px; float:left; display:block; margin:25px 0 0 5px;color:#7fc1f4; font-size: 14px;}
+.pld-1-1{ margin-right: 10px; display: block; width: 80px; height: 16px; float:left; margin-left:5px;}
+.pld-1-2{ margin-right: 10px; display: block; width: 80px; height: 16px; float:left; margin-left:5px; margin-top:15px;}
+.plc-1{ width:580px; height:25px; float:left; display:block;  margin:5px 0 0 5px; color: #666666; font-size: 14px;}
+.pld-1{ width:580px; height:25px; float:left; display:block;  margin:5px 0 0 5px; color: #999999; font-size: 14px;}
+
+
+.pinglun-2{ width:679px; height:127px; border-bottom:1px dashed #000; float:left}
+.pla-2{ width:45px; height:125px; float:left; display:block; }
+.pla-2 img{ margin-top: 27px;} 
+.plb-2{ width:580px; height:25px; float:left; display:block; margin:25px 0 0 5px;color:#7fc1f4; font-size: 14px;}
+.pld-2-1{ margin-right: 10px; display: block; width: 80px; height: 16px; float:left; margin-left:5px;}
+.pld-2-2{margin-top:15px; margin-right: 10px; display: block; width: 80px; height: 16px; float:left; margin-left:5px;}
+.plc-2{ width:580px; height:25px; float:left; display:block;  margin:5px 0 0 5px; color: #666666; font-size: 14px;}
+.pld-2{ width:580px; height:25px; float:left; display:block;  margin:5px 0 0 5px; color: #999999; font-size: 14px;}
+
+.pinglun-3{ width:679px; height:127px; border-bottom:1px dashed #000; float:left}
+.pla-3{ width:45px; height:125px; float:left; display:block; }
+.pla-3 img{ margin-top: 27px;} 
+.plb-3{ width:580px; height:25px; float:left; display:block; margin:25px 0 0 5px;color:#7fc1f4; font-size: 14px;}
+.pld-3-1{ margin-right: 10px; display: block; width: 80px; height: 16px; float:left; margin-left:5px;}
+.pld-3-2{margin-top:15px; margin-right: 10px; display: block; width: 80px; height: 16px; float:left; margin-left:5px;}
+.plc-3{ width:580px; height:25px; float:left; display:block;  margin:5px 0 0 5px; color: #666666; font-size: 14px;}
+.pld-3{ width:580px; height:25px; float:left; display:block;  margin:5px 0 0 5px; color: #999999; font-size: 14px;}
+
+.pinglun-4{ width:679px; height:127px; border-bottom:1px dashed #000; float:left}
+.pla-4{ width:45px; height:125px; float:left; display:block; }
+.pla-4 img{ margin-top: 27px;} 
+.plb-4{ width:580px; height:25px; float:left; display:block; margin:25px 0 0 5px;color:#7fc1f4; font-size: 14px;}
+.pld-4-1{ margin-right: 10px; display: block; width: 80px; height: 16px; float:left; margin-left:5px;}
+.pld-4-2{ margin-right: 10px; display: block; width: 80px; height: 16px; float:left; margin-left:5px;}
+.plc-4{ width:580px; height:25px; float:left; display:block;  margin:5px 0 0 5px; color: #666666; font-size: 14px;}
+.pld-4{ width:580px; height:25px; float:left; display:block;  margin:5px 0 0 5px; color: #999999; font-size: 14px;}
+
+.pinglun-5{ width:679px; height:127px; border-bottom:1px dashed #000; float:left}
+.pla-5{ width:45px; height:125px; float:left; display:block; }
+.pla-5 img{ margin-top: 27px;} 
+.plb-5{ width:580px; height:25px; float:left; display:block; margin:25px 0 0 5px;color:#7fc1f4; font-size: 14px;}
+.pld-5-1{ margin-right: 10px; display: block; width: 80px; height: 16px; float:left; margin-left:5px;}
+.pld-5-2{ margin-right: 10px; display: block; width: 80px; height: 16px; float:left; margin-left:5px;}
+.plc-5{ width:580px; height:25px; float:left; display:block;  margin:5px 0 0 5px; color: #666666; font-size: 14px;}
+.pld-5{ width:580px; height:25px; float:left; display:block;  margin:5px 0 0 5px; color: #999999; font-size: 14px;}
+
+
+.pinglun-6{ width:679px; height:127px; border-bottom:1px dashed #000; float:left}
+.pla-6{ width:45px; height:125px; float:left; display:block; }
+.pla-6 img{ margin-top: 27px;} 
+.plb-6{ width:580px; height:25px; float:left; display:block; margin:25px 0 0 5px;color:#7fc1f4; font-size: 14px;}
+.pld-6-1{ margin-right: 10px; display: block; width: 80px; height: 16px; float:left; margin-left:5px;}
+.pld-6-2{ margin-right: 10px; display: block; width: 80px; height: 16px; float:left; margin-left:5px;}
+.plc-6{ width:580px; height:25px; float:left; display:block;  margin:5px 0 0 5px; color: #666666; font-size: 14px;}
+.pld-6{ width:580px; height:25px; float:left; display:block;  margin:5px 0 0 5px; color: #999999; font-size: 14px;}
+
+.pinglun-7{ width:195px; height:27px; float: right; margin-top:20px;  font-size: 14px;}
+.pinglun-7 a{color:#999999;}
+
+.right{ width:280px; height:845px; float:right;}
+.right-top{ width:280px; height:388px;  float:left;}
+.top-1{ width:270px; height:38px; border-bottom:1px solid #e5e5e5; font-size:18xp; line-height:38px; color:#000;}
+.top-1 img{ float:left; margin:10px 0  0 5px;}
+.form{ float:left; margin-top:5px; font-size:14px; margin-left:5px; line-height:70px;}
+.input{ width:200px; height:28px; border:1px solid #e0e0e0;}
+.input1{ width:120px; height:28px; border:1px solid #e0e0e0;}
+.input2{ width:84px; height:28px; border:1px solid #e0e0e0;}
+.form button{ width:80px; height:30px; border:1px solid #e0e0e0; border-left:none; background:#f3f3f3;}
+.top-2 input{  width:270px; height:38px; background:#68a1e8; float:left; margin-left:10px; text-align:center; line-height:38px; color:#FFF; border:none;}
+.right-but{ width:280px; height:458px; float:left;  margin-top:5px;}
+.top-3{ width:270px; height:38px; border-bottom:1px solid #e5e5e5; font-size:18px; line-height:38px; color:#000;}
+.top-3 img{ float:left; margin:10px 0  0 5px;}
+.top-4{ width:273px; height:100px;float:left; margin-top:10px; padding-left:10px;}
+.top-5{ width:273px; height:100px;float:left; margin-top:10px; padding-left:10px;}
+.top-6{ width:274px; height:165px;float:left; margin:10px 0 0 5px; }
+
+
+.buttom{ width:1000px; height:209px; float:left;}
+.buttom-a{ width:990px; height:38px; line-height:38px; color:#000; font-size:18px; border-bottom:1px solid #e9e9e9; float:left; margin-left:10px;}
+.buttom-b{ width:1000px; height:170px; }
+.buttom-b ul li{ list-style:none; float:left; margin-left:10px; font-size:14px; display:block; width:190px; height:180px; line-height:30px;}
+.buttom-b ul li a{color:#000;}
+
+/*页脚*/
+.foot-topda{ width:100%; height:190px; background:#fafafa;}
+.foot-top{ width:1000px; height:190px;  margin:0 auto; }
+.ftop-l{ width:687px; height:190px;  float:left;}
+.l-a{ width:687px; height:70px; display:block; border-bottom:1px solid #ececec; font-size:24px; color:#666666; line-height:70px;}
+.span{ font-size:14px; color:#999; line-height:24px;}
+.ftop-r{ width:245px; height:190px;  float:right;}
+.r-a{ width:245px; height:70px; display:block; border-bottom:1px solid #ececec; font-size:24px; color:#666666; line-height:70px;}
+
+
+.foot-butda{ width:100%; height:80px;background:#f2f2f2;}
+.foot-but{ width:1000px; height:80px;  margin:0 auto; text-align:center; line-height:80px; color:#999999; font-size:14px;}
+.foot-but a{color:#999999;}
+
+</style>
+</head>
+	
+<body>
+<div class="head">
+  
+    <div class="header">
+      <ul class="ul-1">
+        <li><a href="首页.html">北京贷款</a></li>
+        <li><a href="消费贷款.html">消费贷款</a></li>
+        <li><a href="企业贷款.html">企业贷款</a></li>
+        <li><a href="购车贷款.html">购车贷款</a></li>
+        <li><a href="购房贷款.html">购房贷款</a></li>
+        <li><a href="抵押贷款.html">抵押贷款</a></li>
+        <li><a href="好贷咨询.html">好贷攻略</a></li>
+        <li><a href="贷款问答.html">贷款问答</a></li>
+      </ul>
+      <ul class="ul-2">
+        <li>好贷网,好贷款!</li>
+        <li>客服热线:400-8055-588</li>
+      </ul>
+    </div>
+    <div class="daohang">
+       <div class="nav">
+         <div class="nav1"><img src="img/tu1.jpg" /></div>
+         <div class="nav2">
+           <div class="nav2l"><input type="text" placeholder="问有爱,答无私"/></div>
+           <div class="nav2r"><img src="img/tu2.jpg"/></div>
+         </div>
+         <div class="nav3">
+           <span><a href="#">首页</a></span>
+           <span><a href="#">问题库</a></span>
+         </div>
+         <div  class="nav4">
+           <span><a href="#">登陆</a></span>
+           <span><a href="#">注册</a></span>
+         </div>
+       </div>
+    </div>
+    <div class="banner">
+      <div class="banner1">
+        <img src="img/tu3.jpg" />
+      </div>
+      <div class="banner2">
+        <span class="text1">
+          信用卡分期付款买车的车价比汽车贷款车价更高吗?
+        </span>
+        <span class="text2">
+          听说如果是用信用卡分期付款的话,不能享受车价优惠?有这种说法吗?
+        </span>
+        <ul>
+          <li>车贷4万 一年多少利息</li>
+          <li>信用卡分期购车的利息是多少?</li>
+          <li>无驾照可否申请贷款购车</li>
+        </ul>
+      </div>
+      <div class="banner3">
+        <span class="text3">
+          问有爱  答无私
+        </span>
+        <span class="text4">上万执业信贷经理在这里!</span>
+        <span class="text5"><input type="button" value="我要提问" /></span>
+        <span class="text6">已累计解决用户11002234个问题</span>
+      </div>
+    </div>
+</div>
+
+<div class="main">
+  <div class="left">
+    <div class="submenu">
+      <span class="su1"> 热门问题</span>
+      <span class="su2">已解决问题</span>
+      <span class="su3">待解决问题</span>
+      <span class="su4"> <img src="img/tu4.jpg" class="su5" /> <a href="#">更换一批</a></span>
+    </div>
+    
+    
+    <div class="pinglun">
+      <span class="pla"> <img src="img/tu5.jpg"/></span>
+      <span class="plb">
+      	你好!我想贷款购车 无抵押可以吗 请问需要什么条件
+      </span>
+      <span class="plc">
+      答:只要你有良好的征信记录和稳定的收入来源就可以贷款	
+      </span>
+      <span class="pld">
+      	<span class="pld-0-2"><img src="img/tu6.jpg" />.....射手</span>    <span class="pld-0-2"> <img src="img/tu7.jpg" />   24个问答</span>
+      </span>
+    </div>
+
+    <div class="pinglun-1">
+      <span class="pla-1"> <img src="img/tu19.jpg"/></span>
+      <span class="plb-1">
+      	贷款需要哪些东西，贷了要几天到
+      </span>
+      <span class="plc-1">
+      答:白领贷:满足一下条件可申请:在现单位工作满6个月以上，打卡工资6千以上，有一年以上社保。
+      </span>
+      <span class="pld-1">
+      	<span class="pld-1-2"><img src="img/tu6.jpg" />念小奋</span>    <span class="pld-1-2"> <img src="img/tu7.jpg" />   19个问答</span>
+      </span>
+    </div>
+    
+    <div class="pinglun-2">
+      <span class="pla-2"> <img src="img/tu20.jpg"/></span>
+      <span class="plb-2">
+      	谁知道用车抵押贷款怎么办?
+      </span>
+      <span class="plc-2">
+      答:提供车子一套材料就可以办理:比如车子产权证，行驶证，驾驶证，保单，备用钥匙就可以了。	
+      </span>
+      <span class="pld-2">
+      	<span class="pld-2-2"><img src="img/tu6.jpg" />飞的高啊啊</span>    <span class="pld-2-2"> <img src="img/tu7.jpg" />   16个问答</span>
+      </span>
+    </div>
+    
+    <div class="pinglun-3">
+      <span class="pla-3"> <img src="img/tu21.jpg"/></span>
+      <span class="plb-3">
+      	我的公司已经经营5年了，想向银行贷款需要什么条件
+      </span>
+      <span class="plc-3">
+      答:目前建设银行和交通银行推出"税易贷"你可以询问一下当地银行。民生银行推出了小微企业经营	
+      </span>
+      <span class="pld-3">
+      	<span class="pld-3-2"><img src="img/tu6.jpg" />中村次秦</span>    <span class="pld-3-2"> <img src="img/tu7.jpg" />   24个问答</span>
+      </span>
+    </div>
+    
+    <div class="pinglun-4">
+      <span class="pla-4"> <img src="img/tu22.jpg"/></span>
+      <span class="plb-4">
+      	你好!我想贷款购车 无抵押可以吗 请问需要什么条件
+      </span>
+      <span class="plc-4">
+      答:只要你有良好的征信记录和稳定的收入来源就可以贷款	
+      </span>
+      <span class="pld-4">
+      	<span class="pld-4-2"><img src="img/tu6.jpg" />.....射手</span>    <span class="pld-4-2"> <img src="img/tu7.jpg" />   24个问答</span>
+      </span>
+    </div>
+    
+    <div class="pinglun-5">
+      <span class="pla-5"> <img src="img/tu23.jpg"/></span>
+      <span class="plb-5">
+      	你好!我想贷款购车 无抵押可以吗 请问需要什么条件
+      </span>
+      <span class="plc-5">
+      答:只要你有良好的征信记录和稳定的收入来源就可以贷款	
+      </span>
+      <span class="pld-5">
+      	<span class="pld-5-2"><img src="img/tu6.jpg" />.....射手</span>    <span class="pld-5-2"> <img src="img/tu7.jpg" />   24个问答</span>
+      </span>
+    </div>
+    
+    <div class="pinglun-6">
+      <span class="pla-6"> <img src="img/tu24.jpg"/></span>
+      <span class="plb-6">
+      	你好!我想贷款购车 无抵押可以吗 请问需要什么条件
+      </span>
+      <span class="plc-6">
+      答:只要你有良好的征信记录和稳定的收入来源就可以贷款	
+      </span>
+      <span class="pld-6">
+      	<span class="pld-6-2"><img src="img/tu6.jpg" />.....射手</span>    <span class="pld-6-2"> <img src="img/tu7.jpg" />   24个问答</span>
+      </span>
+    </div>
+    
+    <div class="pinglun-7">
+            <a href="#">查看全部问题</a>　|　<img src="img/tu4.jpg" /><a href="#">更换一批</a>
+    
+    </div>
+  
+  </div>
+  <div class="right">
+     <div class="right-top">
+      <div class="top-1">
+       <img src="img/tu8.jpg" />　快速申请贷款
+      </div>
+      <form class="form">
+        您的姓名　<input type="text"  class="input" placeholder="如张先生"/>
+         手机号码　<input type="text"  class="input" placeholder="请输入手机号"/>
+          短信验证　<input type="text"  class="input1" placeholder="您的验证码"/><button>获取验证</button><br />
+            贷款金额　<input type="text"  class="input" placeholder="请输入数字　　　　　　　　万元"/>
+
+      </form>
+      <div class="top-2"><input type="button" value="申请贷款" /></div>
+     </div>
+     
+     
+     
+     <div class="right-but">
+       <div class="top-3">
+       <img src="img/tu8.jpg" />　热门贷款工具　　　　　<a href="#" style="font-size:12px; color:#999;">更多>></a>
+      </div>
+      <div class="top-4">
+        <img  src="img/a53.jpg" width="128" height="100"/>
+        <img  src="img/a54.jpg" width="128" height="100"/>
+      </div>
+      <div class="top-5">
+        <img  src="img/a55.jpg" width="128" height="100"/>
+        <img  src="img/a56.jpg" width="128" height="100"/>
+      </div>
+      <div class="top-6">
+        <a href="#"><img  src="img/tu13.jpg" /></a>
+      </div>
+     </div>
+  </div>
+  
+  
+  <div class="buttom">
+     <div class="buttom-a">
+       <img src="img/tu8.jpg" />  专题推荐
+      </div>
+      <div class="buttom-b">
+        <ul>
+          <li><img src="img/tu14.jpg" /><br /> <a href="#">无抵押怎么贷款</a></li>
+          <li><img src="img/tu15.jpg" /><br /> <a href="#">商品房贷款</a></li>
+          <li><img src="img/tu16.jpg" /><br /> <a href="#">如何按揭贷款</a></li>
+          <li><img src="img/tu17.jpg" /><br /> <a href="#">如何申请贷款</a></li>
+          <li><img src="img/tu18.jpg" /><br /> <a href="#">企业贷款如何办理</a></li>
+          
+        </ul>
+      </div>
+  </div>
+</div>
+
+
+
+  <div class="foot-topda">
+     <div class="foot-top">
+       <div class="ftop-l">
+          <span class="l-a">热门标签</span>
+          <div class="span">
+          <span>怎么办理银行代理　在网上转账怎么转　怎么才能从银行贷款　怎么才能无抵押贷款</span><br />
+          <span>质押贷款申请条件　怎样汽车贷款　中长期贷款展期　住房贷款的收入证明　招行车贷利率是多少</span><br />
+          <span>自存银行流水可以贷款吗　渣打银行现贷派　助学贷款利率　自建住房贷款</span>
+          </div>
+       </div>
+       <div class="ftop-r">
+         <span class="r-a">联系我们</span>
+         <div class="span">
+          <span>联系人:郑先生</span><br />
+          <span>Email:zhengxianshen@.com</span><br />
+          
+          </div>
+       </div>
+     </div>
+  </div>
+  <div class="foot-butda">
+      <div class="foot-but">
+        <span><a href="#">关于好贷</a> | <a href="#">信贷员免费注册</a> | <a href="#">贷款计算器</a> | <a href="#">网站使用条款与声明</a> | <a href="#">网站地图</a> | <a href="#">联系我们</a> | <a href="#">商务合作</a></span>
+      </div>
+  </div>商务合作
+
+</body>
+</html>
+	

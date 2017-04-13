@@ -1,0 +1,563 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript" src="js.js"></script>
+<script src="jquery-1.8.3.min.js"></script>
+<style type="text/css">
+*{margin:0;padding:0;}
+body{margin:0;padding:0;font-size:12px;color:#cccccc;font-family:"微软雅黑";}
+ol,ul,li,p,img{display:block;margin:0;padding:0;}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+
+.top{width:100%;height:45px;margin:0 auto;background:#000;}
+.top1{width:960px;height:45px;margin:0 auto;line-height:45px;}
+.orange a{color:#ffffff;}
+.orange a:hover{color:#ff9900;}
+.orange a.now{color:#ff9900;}
+.logo{width:100%;height:83px;margin:0 auto;color:#333333;background:#fdfdfd;border:ipx solid #d0d0d0;}
+.logo1{width:960px;height:83px;margin:0 auto;}
+.nav{width:705px;height:45px;margin-top:20px;float:right;}
+.nav a{width:88px;height:45px;line-height:45px;color:#333;text-align:center;float:left;display:block;}
+.nav a:hover{color:#000;font-weight:bold;background:url(img/a03.jpg);}
+.nav a.now1{color:#000;font-weight:bold;background:url(img/a03.jpg);}
+
+.land{position:absolute;width:300px;height:365px;background:rgba(0,0,0,.5);top:160px;padding-top:35px;padding-left:25px;left:200px; z-index:999}
+.land-1{width:280px;height:40px;color:#FFF;font-weight:bold;font-size:22px;}
+.land span{display:block;width:280px;height:30px;font-size:12px;line-height:30px;color:#fff;}
+
+.banner{width:100%;height:470px;border-bottom:1px solid #d0d0d0;position:relative}
+.banner div{width:100%;height:470px;overflow:hidden;}
+.banner div img{width:100%;height:470px;position:absolute;top:0;left:0}
+.banner ul{
+	position: absolute;
+	right: 254px;
+	top: 440px;
+}
+.banner ul li{margin-left:15px;width:15px;height:15px;background:#a6a6a6;float:left;list-style:none;display:block;cursor:pointer; border-radius:50%;border:1px solid #CCC}
+.banner ul li.hover{background:#003f8f;}
+.hover{background:#003f8f;}
+.banner-1{width:960px;height:120px;margin:24px auto;}
+
+.banner-1{width:960px;height:120px;margin:24px auto;}
+
+.main{width:960px;height:1930px;margin:0 auto;}
+.main-left{width:662px;height:1930px;float:left;}
+.ltab{width:660px;height:376px;border-left:1px solid #e9e9e9;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;border-top:2px solid #00457c;margin-bottom:22px;}
+.ltab-1{width:660px;height:42px;background-color:#f8f8f8;background-image:url(../images/teb-bj.png);background-repeat:repeat-x;}
+.ltab-1 li{float:left;width:86px;height:41px;text-align:center;line-height:41px;font-size:12px;}
+.ltab-1 li a{display:block;color:#333333;border-left:1px solid #f8f8f8;border-right:1px solid #f8f8f8;border-bottom:1px solid #e9e9e9;}
+.ltab-1 li a:hover{background-color:#FFF;color:#333333;border-left:1px solid #e9e9e9;border-right:1px solid #e9e9e9;border-bottom:1px solid #FFF;}
+.ltabx{width:632px;height:333px;overflow:hidden}
+.ltabn{width:632px;height:333px;}
+.ltabn ul li{width:632px;height:65px;border-bottom:1px dashed #eeeeee;color:#999}
+.ltabn ul li img{float:left;margin-top:12px;margin-left:5px;}
+.jianjie{width:110px;height:42px;float:left;margin-top:12px;padding-left:15px;line-height:20px}
+.ltabn ul li span{display:block;width:370px;height:65px;line-height:65px;float:left;}
+.ltabd{width:632px;height:70px;line-height:70px;color:#999;}
+.lzx{width:660px;height:645px;border-left:1px solid #e9e9e9;border:1px solid #e9e9e9;margin-top:20px;}
+.lzx-1{width:100px;height:41px;line-height:41px;padding-left:15px;color:#333333;font-size:12px;float:left;font-weight:bold}
+.lzx-2{width:50px;height:41px;line-height:41px;text-align:center;color:#666666;font-size:12px;float:right;}
+.lzx-3{width:660px;height:600px;}
+.lzx-4{width:330px;height:600px;float:left;}
+.p-1{width:330px;height:70px;margin-top:19px;line-height:22px;color:#999;}
+.lzx-4 ul{margin-top:10px;padding-left:15px;}
+.lzx-4 ul li{line-height:26px;color:#00457c}
+.ldk{width:660px;height:310px;border:1px solid #e9e9e9;margin-top:32px;}
+.ldk-1{width:660px;height:265px;}
+.ldk-1 ul{width:330px;height:250px;float:left;margin-top:10px;}
+.ldk-1 ul li{line-height:30px;color:#666;padding-left:15px;}
+.bzx{width:662px;height:315px;margin-top:24px;}
+.bzx-1{width:318px;height:311px;border:1px solid #e9e9e9;float:left;}
+.bzx-2{width:318px;height:42px;background-color:#f8f8f8;background-image:url(../images/teb-bj.png);background-repeat:repeat-x;}
+.bzx-1 ul{margin-top:10px;padding-left:15px;}
+.bzx-1 ul li{line-height:31px;color:#666}
+.btj{width:318px;height:311px;border:1px solid #e9e9e9;float:right;}
+.btj-1{width:300px;height:270px;padding-left:17px;}
+.btj-1 ul{float:left;width:134px;heihgt:270px;}
+.btj-1 ul li{margin-top:30px;display:block;width:134px;height:33px;}
+.btj-1 ul li img{float:left;}
+.btj-1 ul li span{float:left;display:block;width:70px;text-align:center;line-height:33px;color:#333333;}
+.main-right{width:282px;height:1930px;float:right;}
+.rsq{width:280px;height:376px;border-left:1px solid #e9e9e9;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;border-top:2px solid #00457c;margin-bottom:22px;}
+.rsq-1{width:280px;height:42px;background-color:#f8f8f8;background-image:url(../images/teb-bj.png);background-repeat:repeat-x;}
+.rsq-2{width:100px;height:41px;line-height:41px;padding-left:15px;color:#00457c;font-size:12px;float:left;font-weight:bold}
+.rsq-3{width:266px; height:261px; padding-top:18px; padding-left:14px}
+.form1{ color:#666666;}
+input.usename{ width:186px; height:32px; border:1px solid #eee; padding-left:3px;}
+input.phone{ width:186px; height:32px; border:1px solid #eee; padding-left:3px; margin-top:16px;}
+input.lx{ margin-top:27px;}
+input.money{ width:186px; height:32px; border:1px solid #eee; padding-left:3px; margin-top:16px;}
+input.tj{ width:188px; height:33px; margin-top:16px; background:#0198f1; border:1px solid #226c99; color:#fff; margin-left:30px;}
+.rsq-4{width:260px;height:54px;border-top:1px solid #ddd;margin-left:10px;color:#999999;line-height:25px;}
+.ral{width:280px;height:262px;margin-top:20px;border:1px solid #e9e9e9}
+.ral-1{width:100px;height:41px;line-height:41px;padding-left:15px;color:#00457c;font-size:12px;float:left;font-weight:bold}
+.ral-2{width:260px;height:200px;border-bottom:1px solid #ddd;margin-left:15px;color:#999999;line-height:21px;margin-top:8px;}
+.rjs{width:280px;height:287px;margin-top:12px;border:1px solid #e9e9e9}
+.rjs ul{width:280px;height:235px;margin-top:8px}
+.rjs ul li{color:#333;line-height:24px;height:24px;padding-left:10px;}
+.rxg{width:280px;height:310px;margin-top:114px;border:1px solid #e9e9e9}
+.rxg-1{width:150px;height:41px;line-height:41px;padding-left:15px;color:#333333;font-size:12px;float:left;font-weight:bold}
+.rxg-2{width:257px;height:82px;border-bottom:1px solid #e9e9e9;margin-left:15px;}
+.rxg-2 img{float:left;margin-top:25px;margin-right:10px;}
+.rxg-3{float:left;width:200px;height:58px;margin-top:22px;color:#666666;line-height:22px;}
+.rzx{width:280px;height:336px;margin-top:24px;border:1px solid #e9e9e9}
+.rzx-1{width:278px;height:50px;}
+.rzx-2{width:139px;height:50px;display:block;float:left;font-size:18px;text-align:center;line-height:50px;color:#333333}
+.rzx-3{width:248px;height:210px;margin-top:10px;margin-left:15px;}
+.rzx-4{width:248px;height:32px;border-bottom:1px solid #e9e9e9;color:#666666;}
+.rzx-5{width:86px;height:32px;display:block;float:left;line-height:32px;text-align:left;}
+.rzx-6{width:55px;height:32px;display:block;float:left;line-height:32px;margin-right:20px;text-align:center;}
+.rzx-7{width:85px;height:32px;display:block;float:left;line-height:32px;text-align:right;}
+
+.hzjg{width:100%;margin-top:28px;}
+.hzjg1{width:960px;height:150px;border:1px solid #e9e9e9;margin-top:28px;margin:0 auto;}
+.hz{height:40px;border-bottom:1px solid #e9e9e9;color:#000;font-size:14px;font-weight:bold;padding-left:14px;line-height:40px;background:#f8f8f8;}
+.hzjg1 ul li{width:114px;float:left;color:#323232;line-height:45px;margin-right:26px;}
+.lie{height:46px;}
+.lie span{float:left;}
+.lie span a{color:#323232;}
+.lie img{float:left;}
+.lie1{height:54px;}
+.lie1 span{float:left;}
+.lie1 span a{color:#323232;}
+.lie1 img{float:left;}
+.rmcs{width:100%;margin-top:22px;}
+.rmcs1{width:960px;height:135px;border:1px solid #e9e9e9;margin-top:22px;margin:0 auto;}
+.cs{color:#999;line-height:25px;margin-top:10px;margin-bottom:10px;}
+.cs a{color:#999;}
+.bjrm{width:100%;margin-top:22px;}
+.bjrm1{width:960px;height:110px;margin-top:22px;margin:0 auto;border:1px solid #e9e9e9;}
+.tj{color:#999;line-height:25px;margin-top:10px;margin-bottom:10px;}
+.tj a{color:#999;}
+
+.footer{ width:100%; height:270px; background:#f5f5f5; border-top:1px solid #d0d0d0; margin-top:40px;}
+.footer-in{ width:960px; height:270px; margin:0 auto;}
+.footer1{ width:960px; height:26px; border-bottom:1px solid #d9d9d9;}
+.footer1 h3{ display:block; width:50px; height:26px; text-align:center; line-height:26px; float:left; font-size:12px; color:#333;}
+.p15{ display:block; width:146px; height:26px; float:right; color:#cccccc; text-align:center; line-height:26px;}
+.footer2{ width:960px; height:63px; border-bottom:1px solid #d9d9d9;}
+.p16{ color:#cccccc; letter-spacing:1px; line-height:20px; padding-top:13px;}
+.footer3{ width:960px; height:179px;}
+.p17{ line-height:43px; display:block; width:960px; height:43px; text-align:center; color:#999999;}
+.span1{ display:block; width:960px; height:71px;}
+.ul12{ text-align:center; padding-top:9px;}
+.ul12 li{ line-height:24px; color:#999999;}
+.span2{ display:block; width:960px; height:65px;}
+
+.ipt{ display:block; width:630px; height:49px;}
+input[type="radio"]{ line-height:30px; margin-right:5px; margin-left:23px;}
+.p18{ width:201px; height:32px; display:block; float:left;}
+input.txt{ width:201px; height:32px; border:1px solid #ccc; background:url(../images/ipt1.png); margin-left:47px;}
+input.txt1{ width:169px; height:30px; border:1px solid #ccc; margin-left:5px;}
+input.btn{ width:91px; height:32px; background:#0198f1; color:#fff; margin-left:102px;}
+input.btn1{ width:91px; height:32px; background:#ececec; color:#000; margin-left:15px;}
+</style>
+</head>
+
+<body>
+<div class="top">
+	<div class="top1">
+    	<span style="float:left;">　好贷网，好贷款！ </span>
+        <span style="float:left;"><img src="img/a01.jpg" /></span>
+        <span class="orange" style="float:right;color:#ffffff;">客服热线：<b style="color:#ffffff;">400-8055-855</b>（接听时间：工作日9：30-16：30）　　<a href="#">信贷经理登录</a> | <a href="#" class="now">信贷经理免费注册</a> | <a href="#">普通用户登录</a>　</span>
+    </div>
+</div>
+<div class="logo">
+	<div class="logo1">
+		<img src="img/a02.jpg" style="float:left;"/>
+        <div style="width:63px;height:43px;float:left;margin-top:25px;margin-left:20px;">
+        	<select style="width:60px;height:20px;color:#0079c1;background:#f8f8f8;border:1px solid #f3f3f3;"><option>北京</option><option>上海</option><option>天津</option><option >山西</option><option>陕西</option><option>湖南</option><option>湖北</option></select>
+			<p style="margin-top:3px;">[切换城市]</p>
+        </div>
+        <div class="nav"><a href="首页.html" class="now1">好贷首页</a><a href="消费贷款.html">消费贷款</a><a href="企业贷款.html">企业贷款</a><a href="购车贷款.html" >购车贷款</a><a href="购房贷款.html">购房贷款</a><a href="抵押贷款.html">抵押贷款</a><a href="好贷咨询.html">好贷攻略</a><a href="贷款问答.html">贷款问答</a></div>
+	</div>
+</div>
+
+<div class="land">
+	<div class="land-1">快速搜索贷款</div>
+    <span>贷款用途：</span>
+    <select style="width:280px;height:42px;border:1px solid #9a9a9a;color:#828282;"><option>不限</option><option>购房</option><option>购车</option></select>
+    <span><font style="float:left;">贷款金额：</font><font style="float:right;">不足一万可用小数表示</font></span>
+    <select style="width:280px;height:42px;border:1px solid #9a9a9a;color:#828282"><option>10万</option><option>9万</option><option>8万</option></select>
+    <span>贷款期限：</span>
+    <select style="width:280px;height:42px;border:1px solid #9a9a9a;color:#828282"><option>1年</option><option>2年</option><option>3年</option></select>
+    <input type="button" value="搜索一下" style="width:282px;background:url(images/ss.png);height:44px;margin-top:17px;color:#fff;font-size:14px;margin-bottom:20px;"/>
+    <font style="color:#cecece;">15479种信贷产品 2103家银行 3947家小货公司</font> 
+</div>
+<div class="banner">
+  <div> <img src="img/banner1.png" width="1440" height="470" /> <img src="img/banner2.png" width="1440" height="470" /> <img src="img/banner3.png" width="1440" height="470" /> <img src="img/banner4.png" width="1440" height="470" /> </div>
+  <ul>
+    <li class="hover"></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+<div class="banner-1"><img src="img/a105.png" /></div>
+<!--主体-->
+
+<div class="main">
+	<div class="main-left">
+    	<div class="ltab">
+        	<ul class="ltab-1">
+            	<li><a href="#">装修贷</a></li>
+                <li><a href="#">购车贷</a></li>
+                <li><a href="#">旅游贷</a></li>
+                <li><a href="#">教育贷</a></li>
+                <li><a href="#">购房贷</a></li>
+                <li><a href="#">企业贷</a></li>
+            </ul>
+            <div class="ltabx">
+                <div class="ltabn">
+                    <ul>
+                        <li><img src="img/sb1.png" /><div class="jianjie"><font style="color:#000">北京银行</font><br>公积金贷款</div><span>22-25周岁、社保或公积金缴满1年、信用记录良好</span><input value="查看" type="button" style="width:73px;height:22px;float:left;margin-top:20px;font-size:12px"></li>
+                        <li><img src="img/sb2.png" /><div class="jianjie"><font style="color:#000">渣打银行北京分行</font><br>现贷派</div><span>月工资打卡收入5000以上</span><input value="查看" type="button" style="width:73px;height:22px;float:left;margin-top:20px;font-size:12px"></li>
+                        <li><img src="img/sb3.png" /><div class="jianjie"><font style="color:#000">北银消费金融有限</font><br>按揭房贷款</div><span>年满22-25周岁在北京当地或周边有按揭房、还款六个月以上</span><input value="查看" type="button" style="width:73px;height:22px;float:left;margin-top:20px;font-size:12px"></li>
+                        <li><img src="img/sb4.png" /><div class="jianjie"><font style="color:#000">华夏银行北京分行</font><br>益达金</div><span>23-0周岁工资5000元以上，信用记录良好</span><input value="查看" type="button" style="width:73px;height:22px;float:left;margin-top:20px;font-size:12px"></li>
+                    </ul>
+                    <div class="ltabd">　<font style="color:#0079c1">30万企业贷款</font> 约35家银行 　 <font style="color:#0079c1">15万购车贷款</font> 约30家银行 　 <font style="color:#0079c1">30万购房贷款</font> 约31家银行 　 <font style="color:#0079c1">3万消费贷款</font> 约55家银行</div>
+                </div>
+                <div class="ltabn">222222222</div>
+                <div class="ltabn">333333333</div>
+                <div class="ltabn">444444444</div>
+                <div class="ltabn">555555555</div>
+                <div class="ltabn">666666666</div>
+            </div>
+        </div>
+        <img src="img/a106.png" />
+        <div class="lzx">
+        	<div class="ltab-1">
+            	<div class="lzx-1">贷款资讯</div>
+                <div class="lzx-2">更多</div>
+            </div>
+            <div class="lzx-3">
+           	  <div class="lzx-4">
+                    <p class="p-1">
+                        <img src="img/a108.png" style="float:left;margin-left:15px;margin-right:10px;" />
+                        <font style="color:#00457c;">网传炒房 “ 终极模式 ” 的真相</font><br />
+                        由此带来的悖论是，看似最害怕风<br />
+                        险的一群人，往往最喜欢钻研各种
+                    </p>
+                    <ul>
+                        <li>▪ P2P或成两会热点话题</li>
+                        <li>▪ 政协委员：房产税短期难推出</li>
+                        <li>▪ 全国两会热词：房产去库存</li>
+                        <li>▪ 楼市去库存需防风险设计</li>
+                        <li>▪ 梅兴保：房地产调控因城时政</li>
+                        <li>▪ 宗庆后：一个家庭一套经适房</li>
+                        <li>▪ 零首付不是去库存的“王炸</li>
+                        <li>▪ 全国60多城直接补贴购房者</li>
+                        <li>▪ 一线城市房价为何迅速上涨?</li>
+                        <li>▪ 成都北京链家也被消费者投诉</li>
+                        <li>▪ 去年房地产开发投资增长1%</li>
+                        <li>▪ 央行降准 为了卖房这次拼了！</li>
+                        <li>▪ 存款准备金率历次调整一览表</li>
+                        <li>▪ 贷款逾期的后果比你想象的更严重！</li>
+                        <li>▪ 微信被指“偷查”用户征信“篡改”贷款额度</li>
+                        <li>▪ 小李当影帝 拼命如买房</li>
+                        <li>▪ 深圳抢房上海豪宅被抢光</li>
+                        <li>▪ 活久见！任大炮金句绝迹江湖</li>
+                        <li>▪ 去年房地产供地五年新低</li>
+                    </ul>
+              </div>
+              <div class="lzx-4">
+                    <p class="p-1">
+                        <img src="img/a109.png" style="float:left;margin-left:15px;margin-right:10px;" />
+                        <font style="color:#00457c;">网传炒房 “ 终极模式 ” 的真相</font><br />
+                        由此带来的悖论是，看似最害怕风<br />
+                        险的一群人，往往最喜欢钻研各种
+                    </p>
+                    <ul>
+                        <li>▪ P2P或成两会热点话题</li>
+                        <li>▪ 政协委员：房产税短期难推出</li>
+                        <li>▪ 全国两会热词：房产去库存</li>
+                        <li>▪ 楼市去库存需防风险设计</li>
+                        <li>▪ 梅兴保：房地产调控因城时政</li>
+                        <li>▪ 宗庆后：一个家庭一套经适房</li>
+                        <li>▪ 零首付不是去库存的“王炸</li>
+                        <li>▪ 全国60多城直接补贴购房者</li>
+                        <li>▪ 一线城市房价为何迅速上涨?</li>
+                        <li>▪ 成都北京链家也被消费者投诉</li>
+                        <li>▪ 去年房地产开发投资增长1%</li>
+                        <li>▪ 央行降准 为了卖房这次拼了！</li>
+                        <li>▪ 存款准备金率历次调整一览表</li>
+                        <li>▪ 贷款逾期的后果比你想象的更严重！</li>
+                        <li>▪ 微信被指“偷查”用户征信“篡改”贷款额度</li>
+                        <li>▪ 小李当影帝 拼命如买房</li>
+                        <li>▪ 深圳抢房上海豪宅被抢光</li>
+                        <li>▪ 活久见！任大炮金句绝迹江湖</li>
+                        <li>▪ 去年房地产供地五年新低</li>
+                    </ul>
+              </div>
+            </div>
+        </div>
+        <div class="ldk">
+        	<div class="ltab-1">
+            	<div class="lzx-1">贷款问答</div>
+                <input type="text" placeholder="请输入搜索关键词" style="width:298px;height:23px;float:left;margin-left:90px;margin-top:8px;border:1px solid  #d5d5d5; border-radius:3px;color:#666;"/>
+                <input type="button" value="搜索答案" style="width:76px;height:25px;float:left;margin-left:12px;margin-top:8px; border-radius:3px;color:#fff;background:#4d95e4"/>
+                 <input type="button" value="提问" style="width:48px;height:25px;float:left;margin-left:12px;margin-top:8px; border-radius:3px;color:#fff;background:#fe7c00"/>
+            </div>
+            <div class="ldk-1">
+            	<ul>
+                	<li>▪ 你好！我想贷款购车 无抵押可以么 请问…</li>
+                	<li>▪ 企业在东莞市可不可以办企业贷款？</li>
+                	<li>▪ 我的公司已经经营5年了，想向银行贷款…</li>
+                	<li>▪ 贷款可否不通过中介，自己找银行</li>
+                	<li>▪ 现在买房公积金贷款利率和商贷利率差…</li>
+                	<li>▪ 评估756万贷款33万收多少钱评估费</li>
+                	<li>▪ 按揭房做公证一定要按揭合同原件么？</li>
+                	<li>▪ 无按揭自置是什么意思</li>
+                </ul>
+                <ul>
+                	<li>▪ 你好！我想贷款购车 无抵押可以么 请问…</li>
+                	<li>▪ 企业在东莞市可不可以办企业贷款？</li>
+                	<li>▪ 我的公司已经经营5年了，想向银行贷款…</li>
+                	<li>▪ 贷款可否不通过中介，自己找银行</li>
+                	<li>▪ 现在买房公积金贷款利率和商贷利率差…</li>
+                	<li>▪ 评估756万贷款33万收多少钱评估费</li>
+                	<li>▪ 按揭房做公证一定要按揭合同原件么？</li>
+                	<li>▪ 无按揭自置是什么意思</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bzx">
+       	  <div class="bzx-1">
+           	<div class="bzx-2">
+                	<div class="lzx-1">北京贷款资讯</div>
+                    <div class="lzx-2">更多</div>
+            </div>
+              <ul>
+               	  <li>▪ 北京二手房重现加价毁约</li>
+                	<li>▪ 北京：首套房平均利率低至4</li>
+                	<li>▪ 北京通州先行先试开放街区</li>
+                	<li>▪ 北京购房者不愿再等推高房价</li>
+                	<li>▪ 官方解读契税营业税优惠新政</li>
+                	<li>▪ 北京今年至少建保保障房5万套</li>
+                	<li>▪ 北漂一族该不该坚守北京买房</li>
+                	<li>▪ 北京新房库存创三年最低</li>
+              </ul>
+          </div>
+          <div class="btj">
+           	<div class="bzx-2">
+           	  <div class="lzx-1">北京银行贷款推荐</div>
+           	</div>
+            <div class="btj-1">
+            	<ul>
+                	<li><img src="img/yh1.png" /><span>南京银行</span></li>
+                    <li><img src="img/yh2.png" /><span>渣打银行</span></li>
+                    <li><img src="img/yh3.png" /><span>花旗银行</span></li>
+                    <li><img src="img/yh3.png" /><span>花旗银行</span></li>
+                </ul>
+                <ul>
+                	<li><img src="img/yh4.png" /><span>广发银行</span></li>
+                    <li><img src="img/yh5.png" /><span>北京银行</span></li>
+                    <li><img src="img/yh2.png" /><span>渣打银行</span></li>
+                    <li><img src="img/yh6.png" /><span>招商银行</span></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+	<div class="main-right">
+    	<div class="rsq">
+        	<div class="rsq-1">
+            	<div class="rsq-2">快速申请贷款</div>
+            </div>
+            <div class="rsq-3">
+              <form class="form1">
+            	您的姓名：<input type="text" class="usename" placeholder="如：李江涛"/><br />
+                手机号码：<input type="text" class="phone" placeholder="您的手机号码"/><br />
+                申请类型:<input type="radio" class="lx" />个人<input type="radio" class="lx" />企业<br />
+                申贷金额：
+                <input type="text" class="money" placeholder="请输入数字　　　　　　万元"/><br />
+                <input type="submit" class="tj" value="申请贷款"/>
+            </form>
+            </div>
+            <div class="rsq-4">请确认联系方式无误。提前申请后，客服会拨打<br/>
+            您的手机，为您免费定制方案
+            </div>
+        </div>
+        <img src="img/a107.png" />
+        <div class="ral">
+        	<div class="rsq-1">
+            	<div class="lzx-1">近期成功案例</div>
+            </div>
+            <div class="ral-2">
+            	<font style="color:#333;font-weight:bold;">张女士 成功贷款 10万元</font><br />
+                张女士，苏州市，在大型垄断国企上班，担任企业高
+                管，月收人12000/月。在本地有商品房2套，贷
+                款想自己做点小生意，通过抵押形式，成功贷款
+                10万元。<br />
+                <font style="color:#333;font-weight:bold;">宋先生 成功贷款 10万元</font><br />
+                宋先生，上海本地人，私营企业主，信用状况
+                良好，月收入比较高，虽热没有本地房产，信用
+                贷款成功
+            </div>
+        </div>
+        <div class="rjs">
+        	<div class="rsq-1">
+            	<div class="lzx-1">贷款计算工具</div>
+            </div>
+          <ul>
+                <li>房贷计算器</li>
+                <li>二手房计算器</li>
+                <li>公积金贷款计算器</li>
+                <li>组合贷款计算器</li>
+                <li>等额本金贷款计算器</li>
+                <li>等额本息贷款计算器</li>
+                <li>二手房交易税费计算器</li>
+                <li>车带计算器</li>
+                <li>还款方式比较计算器</li>
+          </ul>
+        </div>
+        <div class="rxg">
+        	<div class="rsq-1">
+            	<div class="rxg-1">北京贷款（10万）相关推荐</div>
+                <div class="lzx-2">更多</div>
+            </div>
+            <div class="rxg-2" style="margin-top:17px">
+            	<img src="img/a110.png" />
+                <div class="rxg-3">
+                	<font style="color:#333333;line-height:16px;">宜信普惠信息咨询有限公司北京</font><br />
+                    精英贷 信用货<br />
+                    总利息：<font style="color:#ff9900;">4.45万</font> 分期6057元/月
+                </div>
+            </div>
+            <div class="rxg-2">
+            	<img src="img/a111.png" />
+                <div class="rxg-3">
+                	<font style="color:#333333;line-height:16px;">北京消费金融有限公司北京</font><br />
+                    精英贷 信用货<br />
+                    总利息：<font style="color:#ff9900;">1.16万</font> 分期4652元/月
+                </div>
+            </div>
+            <div class="rxg-2">
+            	<img src="img/a112.png" />
+                <div class="rxg-3">
+                	<font style="color:#333333;line-height:16px;">稳安贷商务顾问（北京）有限公司</font><br />
+                    精英贷 信用货<br />
+                    总利息：<font style="color:#ff9900;">3.12万</font> 分期5467元/月
+                </div>
+            </div>
+        </div>
+        <div class="rzx">
+        	<div class="rsq-1">
+            	<div class="rxg-1">最新银行贷款利率</div>
+            </div>
+            <div class="rzx-1">
+            	<span class="rzx-2">贷款利率</span>
+                <span class="rzx-2">存款利率</span>
+            </div>
+            <div class="rzx-3">
+                <div class="rzx-4">
+                    <span class="rzx-5">贷款期限</span>
+                    <span class="rzx-6">一般贷款</span>
+                    <span class="rzx-7">住房公积金贷款</span>
+                </div>
+                <div class="rzx-4">
+                    <span class="rzx-5">6个月内</span>
+                    <span class="rzx-6">4.5%</span>
+                    <span class="rzx-7">3.5%</span>
+                </div>
+                <div class="rzx-4">
+                    <span class="rzx-5">6个月至1年</span>
+                    <span class="rzx-6">4.5%</span>
+                    <span class="rzx-7">3.5%</span>
+                </div>
+                <div class="rzx-4">
+            		<span class="rzx-5">1年至3年</span>
+                	<span class="rzx-6">5%</span>
+                	<span class="rzx-7">3.5%</span>
+            	</div>
+                <div class="rzx-4">
+            		<span class="rzx-5">3年至5年</span>
+                	<span class="rzx-6">5%</span>
+                	<span class="rzx-7">3.5%</span>
+            	</div>
+                <div class="rzx-4">
+            		<span class="rzx-5">5年以上</span>
+                	<span class="rzx-6">5。15%</span>
+                	<span class="rzx-7">4%</span>
+            	</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="hzjg">
+	<div class="hzjg1">
+		<div class="hz">合作伙伴</div>
+        <ul class="lie">
+        	<li><img src="img/icon8.png" style="margin:0 10px;"/><span><a href="#">华夏银行</a></span></li>
+            <li><img src="img/icon9.png" style="margin:0 10px;"/><span><a href="#">广发银行</a></span></li>
+            <li><img src="img/icon10.png" style="margin:0 10px;"/><span><a href="#">平安银行</a></span></li>
+            <li><img src="img/icon11.png" style="margin:0 10px;"/><span><a href="#">工商银行</a></span></li>
+            <li><img src="img/icon12.png" style="margin:0 10px;"/><span><a href="#">渣打银行</a></span></li>
+            <li><img src="img/icon13.png" style="margin:0 10px;"/><span><a href="#">融联信达</a></span></li>
+            <li style="margin-right:0;"><img src="img/icon14.png" style="margin:0 10px;"/><span><a href="#">普惠金融</a></span></li>
+        </ul>
+        <ul class="lie1">
+        	<li><img src="img/icon15.png" style="margin:0 10px;"/><span><a href="#">易信普惠</a></span></li>
+            <li><img src="img/icon16.png" style="margin:0 10px;"/><span><a href="#">国创控股</a></span></li>
+            <li><img src="img/icon17.png" style="margin:0 10px;"/><span><a href="#">爱投资</a></span></li>
+            <li><img src="img/icon18.png" style="margin:0 10px;"/><span><a href="#">中金信诺</a></span></li>
+            <li><img src="img/icon19.png" style="margin:0 10px;"/><span><a href="#">中聚财富</a></span></li>
+            <li><img src="img/icon20.png" style="margin:0 10px;"/><span><a href="#">中致投资</a></span></li>
+            <li style="margin-right:0;"><img src="img/icon21.png" style="margin:0 10px;"/><span><a href="#">中汇凯天</a></span></li>
+        </ul>
+	</div>
+</div>
+<div class="rmcs">
+	<div class="rmcs1">
+    	<div class="hz">热门城市贷款</div>
+        <div class="cs">
+        	　<a href="#">上海贷款</a>　　　　　　　<a href="#">北京贷款</a>　　　　　　　<a href="#">深圳贷款</a>　　　　　　　<a href="#">厦门贷款</a>　　　　　　　<a href="#">天津贷款</a>　　　　　　　<a href="#">大连贷款</a>　　　　　　　　<a href="#">南京贷款</a>　　　　　　　 　<a href="#">无锡贷款</a>　　　　　　　<a href="#">鄂尔多斯贷款</a>　　　　　<a href="#">哈尔滨贷款</a>　　　　　　<a href="#">宁波贷款</a>　　　　　　　<a href="#">温州贷款</a>　　　　　　　<a href="#">福州贷款</a>　　　　　　　　<a href="#">泉州贷款</a>　　　　　　　 　<a href="#">广州贷款</a>　　　　　　　<a href="#">成都贷款</a>　　　　　　　<a href="#">苏州贷款</a>　　　　　　　<a href="#">杭州贷款</a>　　　　　　　<a href="#">重庆贷款</a>　　　　　　　<a href="#">西安贷款</a>
+        </div>
+    </div>
+</div>
+<div class="bjrm">
+	<div class="bjrm1">
+    	<div class="hz">北京热门贷款推荐</div>
+        <div class="tj">
+        	　<a href="#">北京小额贷款</a>　　　　　　<a href="#">北京汽车贷款</a>　　　　　　<a href="#">零首付贷款</a>　　　　　　<a href="#">二手车贷款</a>　　　　　　<a href="#">北京住房贷款</a>　　　　　　<a href="#">二手房贷款</a>　　　　　　<a href="#">北京消费贷款</a>　　　　 　<a href="#">房屋抵押贷款</a>　　　　　　<a href="#">北京经营贷款</a>　　　　　　<a href="#">北京装修贷款</a>　　　　　<a href="#">北京企业贷款</a>　　　　　<a href="#">住房抵押贷款</a>　　　　　　<a href="#">北京无抵押贷款</a>　　　　<a href="#">无抵押贷款</a>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+	<div class="footer-in">
+    	<div class="footer1">
+       	  <h3>友情链接</h3>
+          <p class="p15">友链合作：qq3036684819</p>
+        </div>
+        <div class="footer2">
+       	  <p class="p16">理想在线 证券之星 贷款 合力贷 北京贷款 旺财谷 翼龙贷网 美利金融 出国自由行 人人操盘 北京抵押 旺财谷
+
+贷款 多返管家 海内网 北京个从贷款 安家世行 金评媒 <br />
+西宁列表网 银行存款利率 葵花理财 家分期 网贷天眼 住房抵押贷款
+</p>
+        </div>
+        <div class="footer3">
+       	  <p class="p17">好贷网一站式贷款搜索平台，免费为您提供北京各大银行、小贷公司、各类个人贷款、个人信用贷款、个人抵押贷款、企业信用贷款、企业抵押贷款任你选。</p>
+          <span class="span1">
+       	  <ul class="ul12">
+                	<li><font style="color:#666;">关于好贷 ｜ 信贷员免费注册 ｜ 贷款计算器 ｜ 网站使用条款与声明 ｜ 网站地图 ｜ 联系我们 ｜ 商务合作</font></li>
+                    <li>Copyright© 2012-2015 haoai.com All Rights Reserved.京IPC备11015456号-5 京IPC证110311号 京公网安备11010102001350号</li>
+          </ul>
+          </span>
+          <span class="span2"><img alt="" src="img/a26.jpg" style=" margin:0 auto;"/></span>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+</script>
+</body>
+</html>
